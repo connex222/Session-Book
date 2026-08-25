@@ -440,3 +440,43 @@ button,a,select,input,textarea{touch-action:manipulation}
 @media(max-width:900px){.v14-coaching-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:640px){.v14-coaching-grid{grid-template-columns:1fr}.v14-coach-card{padding:16px}}
 @media print{.v14-coaching-grid{grid-template-columns:repeat(2,1fr);break-inside:avoid}.v14-coach-card{box-shadow:none;break-inside:avoid}}
+
+/* V14.2 contrast and pathway fixes */
+:root{
+  --card:#FFFFFF;
+  --muted:#5A6B62;
+}
+.v8-path-hero{
+  color:#EAF2ED;
+}
+.v8-path-hero h1{
+  color:#F5FBF7;
+}
+.v8-path-hero p{
+  color:#B9CDC1;
+}
+.v8-path-card,
+.v8-step{
+  background:var(--card);
+  color:var(--ink);
+}
+.v8-path-card h2,
+.v8-step h3{
+  color:var(--ink);
+}
+.v8-path-card p,
+.v8-step p,
+.v8-step .level{
+  color:var(--slate);
+}
+.v8-next{
+  color:#EAF2ED;
+}
+.v8-next h2{
+  color:#F5FBF7;
+}
+.v8-next p{
+  color:#B9CDC1;
+}
+
+.v8-path-hero .page-title{font:700 12px var(--f-mono);letter-spacing:.16em;text-transform:uppercase;color:#8FD0A5;margin:0 0 8px}
