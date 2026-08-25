@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Session Planner | The Session Book</title>
+<meta name="description" content="Build a practical football training session from The Session Book's 50 drills. Choose your players, time and theme, then print the plan for the pitch.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://connex222.github.io/Session-Book/planner.html">
+<meta name="theme-color" content="#0C1512">
+<link href="assets/site.css" rel="stylesheet">
+<link href="assets/planner.css" rel="stylesheet">
+<script src="assets/planner-data.js"></script>
+</head>
+<body data-session-book-version="7">
+<a class="skip" href="#main">Skip to content</a>
+<header class="planner-hero">
+  <div class="wrap">
+    <div class="planner-top"><a class="planner-home" href="index.html">← The Session Book</a><a class="planner-link" href="index.html">Browse all 50 sessions</a></div>
+    <p class="eyebrow">V7 · Session Planner</p>
+    <h1>Build tonight's session.</h1>
+    <p class="planner-lede">Tell me who has turned up, how long you've got and what you want to work on. The planner will build a practical session from the library — then you can swap anything you don't fancy running.</p>
+    <div class="planner-stats"><span><b>50</b> sessions</span><span><b>150</b> progressions</span><span><b>1</b> printable plan</span></div>
+  </div>
+</header>
+<main id="main">
+<div class="wrap planner-wrap">
+  <section class="planner-controls" aria-labelledby="controls-title">
+    <div class="section-kicker">01 · Tell us about tonight</div>
+    <h2 id="controls-title">What have you got?</h2>
+    <div class="control-grid">
+      <label><span>Players</span><select id="players"><option value="6">6 players</option><option value="8">8 players</option><option value="10" selected>10 players</option><option value="12">12 players</option><option value="14">14 players</option><option value="16">16 players</option><option value="18">18 players</option><option value="20">20 players</option><option value="22">22 players</option></select></label>
+      <label><span>Session length</span><select id="minutes"><option value="45">45 minutes</option><option value="60" selected>60 minutes</option><option value="75">75 minutes</option><option value="90">90 minutes</option></select></label>
+      <label><span>Main focus</span><select id="theme"><option value="all">Whatever the group needs</option><option value="possession">Possession &amp; build-up</option><option value="defending">Defending &amp; pressing</option><option value="transition">Transition &amp; counter</option><option value="finishing">Attacking &amp; finishing</option><option value="setpiece">Set pieces &amp; restarts</option><option value="technical">Technical &amp; touch</option><option value="goalkeeping">Goalkeeping</option></select></label>
+      <label><span>Level</span><select id="level"><option value="all">Any level</option><option value="foundation">Foundation</option><option value="intermediate">Intermediate</option><option value="advanced">Advanced</option><option value="touch">Touch Play</option><option value="small">Small Group</option><option value="goalkeeping">Goalkeeping</option></select></label>
+    </div>
+    <div class="control-actions"><button class="planner-primary" id="build" type="button">Build my session <span>→</span></button><button class="planner-secondary" id="saved-plan" type="button">Load saved plan</button><span class="planner-status" id="status" aria-live="polite">Ready when you are.</span></div>
+  </section>
+
+  <section class="planner-output" id="output" aria-live="polite" hidden>
+    <div class="plan-head"><div><div class="section-kicker">02 · Your session</div><h2 id="plan-title">60-minute session</h2><p id="plan-summary"></p></div><div class="plan-actions"><button class="planner-secondary" id="save-plan" type="button">Save plan</button><button class="planner-primary" id="print-plan" type="button">Print session</button></div></div>
+    <div class="planner-editor-bar"><div><strong>Build your session</strong><span>Drag sessions to reorder them. Use Replace to swap a drill.</span></div><button class="planner-secondary" id="add-block" type="button">+ Add session</button></div><div class="plan-timeline" id="timeline" aria-label="Editable session plan"></div>
+    <div class="plan-advice"><div><strong>Coach's note</strong><p id="coach-note"></p></div><div class="plan-advice-actions"><button class="planner-secondary" id="shuffle" type="button">↻ Shuffle alternatives</button><button class="planner-secondary" id="clear-plan" type="button">Clear</button></div></div>
+    <div class="plan-footer"><a href="index.html">← Back to all sessions</a><span>Built from The Session Book · Adjust the space before you change the exercise.</span></div>
+  </section>
+
+  <section class="planner-how">
+    <div class="section-kicker">03 · How it works</div>
+    <div class="how-grid">
+      <div><b>01</b><h3>Match the group</h3><p>Player numbers and level influence which sessions are suggested. The planner prefers a practical fit rather than pretending every drill suits every squad.</p></div>
+      <div><b>02</b><h3>Build a rhythm</h3><p>The plan moves from arrival and technical work into a main practice and then a game or challenge, with the total time kept inside your available slot.</p></div>
+      <div><b>03</b><h3>Make it yours</h3><p>Open any suggested session to check the setup, coaching points and progressions. Save the plan locally or print it for the touchline.</p></div>
+    </div>
+  </section>
+</div>
+</main>
+<footer><div class="wrap"><p>The Session Book — practical football training sessions with diagrams, coaching points, progressions and tools that help you plan what you need for the next session.</p><div class="foot-links"><a href="pathways.html">Coaching pathways</a><a href="index.html">All sessions</a><a href="planner.html">Session planner</a><a href="about.html">About the coach</a><a href="index.html#faq">Questions</a></div><div class="foot-bot">Free to use · No sign-up · Built for the touchline</div></div></footer>
+<button aria-label="Back to top" class="back-to-top" id="back-to-top" type="button"><span>Back to top</span></button>
+<script src="assets/planner.js"></script>
+<script>
+(function(){var b=document.getElementById('back-to-top');if(!b)return;var r=window.matchMedia('(prefers-reduced-motion: reduce)').matches;function u(){b.classList.toggle('is-visible',scrollY>420)}addEventListener('scroll',u,{passive:true});u();b.onclick=function(){scrollTo({top:0,behavior:r?'auto':'smooth'})}})();
+</script>
+</body>
+</html>
