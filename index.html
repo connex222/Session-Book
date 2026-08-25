@@ -720,5 +720,21 @@
 </div>
 </footer>
 <div aria-live="polite" class="toast" role="status"></div>
+
+<button aria-label="Back to top" class="back-to-top" id="back-to-top" type="button"><span>Back to top</span></button>
+
+<script>
+(function(){
+  var btn=document.getElementById('back-to-top');
+  if(!btn)return;
+  var reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function update(){btn.classList.toggle('is-visible',window.scrollY>420);}
+  window.addEventListener('scroll',update,{passive:true});
+  update();
+  btn.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:reduced?'auto':'smooth'});
+  });
+})();
+</script>
 </body>
 </html><script defer="" src="assets/index.js"></script>
