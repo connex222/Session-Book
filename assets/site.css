@@ -403,3 +403,6 @@ footer a{color:#CFE3D7}
 }
 @media print{.back-to-top{display:none!important}}
 @media(prefers-reduced-motion:reduce){.back-to-top{transition:none}}
+/* V6 planner entry point */
+.v6-planner-link{margin-left:16px;color:#9fc2ad;text-decoration:none;font:700 11px var(--f-mono);letter-spacing:.12em;text-transform:uppercase}.v6-planner-link:hover{color:#fff}
+@media(max-width:640px){.v6-planner-link{margin-left:10px;font-size:9px}}
