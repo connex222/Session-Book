@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://connex222.github.io/Session-Book/sitemap.xml
