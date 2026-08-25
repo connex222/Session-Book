@@ -10,3 +10,5 @@ V14 keeps the V8 visual identity and V12/V13 functionality while making the 50 s
 - Retained Level and Theme filters, pathways, planner, responsive layouts, saved sessions, private notes, print tools and Back to top.
 
 The V14 coaching layer is designed to read like practical touchline guidance rather than generic drill descriptions.
+
+V14 text update: changed “written down as sessions you can run on a Wednesday night” to “written down as training sessions you can run on a training night” across the site.
