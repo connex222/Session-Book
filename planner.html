@@ -12,7 +12,7 @@
 <link href="assets/planner.css" rel="stylesheet">
 <script src="assets/planner-data.js"></script>
 </head>
-<body data-session-book-version="7">
+<body data-session-book-version="9">
 <a class="skip" href="#main">Skip to content</a>
 <header class="planner-hero">
   <div class="wrap">
@@ -26,13 +26,13 @@
 <main id="main">
 <div class="wrap planner-wrap">
   <section class="planner-controls" aria-labelledby="controls-title">
-    <div class="section-kicker">01 · Tell us about tonight</div>
-    <h2 id="controls-title">What have you got?</h2>
+    <div class="section-kicker">01 · Tell me about tonight</div><h2 id="controls-title">Build a session that fits your group</h2>
+    <p class="planner-copy">Give the planner the real-world constraints. It will weigh player numbers, age, time and what you want the players to improve — then build a session from the library.</p>
     <div class="control-grid">
       <label><span>Players</span><select id="players"><option value="6">6 players</option><option value="8">8 players</option><option value="10" selected>10 players</option><option value="12">12 players</option><option value="14">14 players</option><option value="16">16 players</option><option value="18">18 players</option><option value="20">20 players</option><option value="22">22 players</option></select></label>
+      <label><span>Age group</span><select id="age"><option value="u8">U8–U10</option><option value="u11" selected>U11–U12</option><option value="u13">U13–U14</option><option value="u15">U15–U16</option><option value="u17">U17 / Adult</option></select></label>
       <label><span>Session length</span><select id="minutes"><option value="45">45 minutes</option><option value="60" selected>60 minutes</option><option value="75">75 minutes</option><option value="90">90 minutes</option></select></label>
-      <label><span>Main focus</span><select id="theme"><option value="all">Whatever the group needs</option><option value="possession">Possession &amp; build-up</option><option value="defending">Defending &amp; pressing</option><option value="transition">Transition &amp; counter</option><option value="finishing">Attacking &amp; finishing</option><option value="setpiece">Set pieces &amp; restarts</option><option value="technical">Technical &amp; touch</option><option value="goalkeeping">Goalkeeping</option></select></label>
-      <label><span>Level</span><select id="level"><option value="all">Any level</option><option value="foundation">Foundation</option><option value="intermediate">Intermediate</option><option value="advanced">Advanced</option><option value="touch">Touch Play</option><option value="small">Small Group</option><option value="goalkeeping">Goalkeeping</option></select></label>
+      <label><span>What do you want to improve?</span><select id="objective"><option value="balanced">A bit of everything</option><option value="build">Playing out &amp; building up</option><option value="possession">Keeping the ball &amp; progressing</option><option value="defending">Defending &amp; pressing</option><option value="transition">Transition &amp; counter-attacking</option><option value="attacking">Creating &amp; finishing chances</option><option value="technical">First touch, passing &amp; technique</option><option value="setpiece">Set pieces &amp; restarts</option><option value="goalkeeping">Goalkeeping</option></select></label>
     </div>
     <div class="control-actions"><button class="planner-primary" id="build" type="button">Build my session <span>→</span></button><button class="planner-secondary" id="saved-plan" type="button">Load saved plan</button><span class="planner-status" id="status" aria-live="polite">Ready when you are.</span></div>
   </section>
@@ -47,7 +47,7 @@
   <section class="planner-how">
     <div class="section-kicker">03 · How it works</div>
     <div class="how-grid">
-      <div><b>01</b><h3>Match the group</h3><p>Player numbers and level influence which sessions are suggested. The planner prefers a practical fit rather than pretending every drill suits every squad.</p></div>
+      <div><b>01</b><h3>Match the group</h3><p>Player numbers, age and the coaching objective influence the recommendations. The planner prefers a practical fit rather than pretending every drill suits every group.</p></div>
       <div><b>02</b><h3>Build a rhythm</h3><p>The plan moves from arrival and technical work into a main practice and then a game or challenge, with the total time kept inside your available slot.</p></div>
       <div><b>03</b><h3>Make it yours</h3><p>Open any suggested session to check the setup, coaching points and progressions. Save the plan locally or print it for the touchline.</p></div>
     </div>
