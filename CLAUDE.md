@@ -7,8 +7,7 @@ Instructions for AI assistants working in this repository.
 The Session Book is a static website of 50 football training sessions and drills for grassroots coaches, with 70 hand-drawn SVG diagrams, learning pathways and a session planner.
 
 - Live: https://connex222.github.io/Session-Book/ (GitHub Pages, branch `main`, root folder)
-- The paid product built from this material is **Cones & Bibs** (conesandbibs.com, hosted on Cloudflare). That is a separate project and is not deployed from this repository.
-
+- Cones & Bibs, a paid version of this material, was withdrawn from sale in November 2026. Do not link to conesandbibs.com.
 ## Architecture
 
 | Part | Location |
